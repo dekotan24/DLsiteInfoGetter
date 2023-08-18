@@ -1,7 +1,9 @@
 # DLsiteInfoGetter
 ## 概要
 DLsiteのURL or 作品IDを元に、作品名、サークル名、作品種別を取得するDLLです。
+
 パースに[AngleSharp](https://github.com/AngleSharp/AngleSharp)を使用していますので、nugetで取得してください。
+
 .NET Framework 4.8.1で開発しました。
 
 
