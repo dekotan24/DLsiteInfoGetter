@@ -108,9 +108,6 @@ namespace DLsiteInfoGetter
 				productTypeID = "NA";
 			}
 
-			// 結果反映
-			prodType = productTypeID;
-
 			// 作品ID計算処理
 			beginID = upperText.IndexOf((productTypeID));
 			if (beginID < 0)
@@ -133,6 +130,10 @@ namespace DLsiteInfoGetter
 				setErrMsg("正規表現チェックでエラーが発生しました。文字列の切り出し結果が不正です。(E003)[" + ansText + "]");
 				return string.Empty;
 			}
+
+			// 結果反映
+			prodType = productTypeID;
+			prodID = ansText;
 
 			return ansText;
 		}
