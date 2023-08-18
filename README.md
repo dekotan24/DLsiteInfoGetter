@@ -11,7 +11,7 @@ DLsiteのURL or 作品IDを元に、作品名、サークル名、作品種別�
 ## 使い方
 	var main = new DLsiteInfoGetter.Main();
 	string searchTarget = "RJ162718";  // "https://www.dlsite.com/maniax/work/=/product_id/RJ162718.html" でも可
-	bool result = main.GetInfo(searchTarget, out string prodID, out string title, out string circle, out string prodType, out string errMsg);
+	bool result = main.GetInfo(searchTarget, out string prodID, out string title, out string circle, out string prodType, out string imageUrl, out string errMsg);
 
  result：true:エラーなし／false:エラーあり
  
@@ -22,10 +22,10 @@ DLsiteのURL or 作品IDを元に、作品名、サークル名、作品種別�
  circle：サークル名
  
  prodType：作品種別（RJ|VJ|RE|VE|BJ|AJ）
+
+ imageUrl：サムネイル画像URL（maniaxのRJのみ対応）
  
  errMsg：エラーが発生した場合のエラーエッセージ
- 
-![image](https://github.com/dekotan24/DLsiteInfoGetter/assets/27037519/3483d1b9-9dae-481c-b06c-7c1477707547)
 
 
 
@@ -37,7 +37,7 @@ DLsiteのURL or 作品IDを元に、作品名、サークル名、作品種別�
 		var main = new DLsiteInfoGetter.Main();
 		if (!string.IsNullOrEmpty(searchTargetText.Text.Trim()))
 		{
-			bool result = main.GetInfo(searchTargetText.Text.Trim(), out string prodID, out string searchResult, out string circle, out string prodType, out string errMsg);
+			bool result = main.GetInfo(searchTargetText.Text.Trim(), out string prodID, out string searchResult, out string circle, out string prodType, out string imageUrl, out string errMsg);
 			if (!string.IsNullOrEmpty(errMsg))
 			{
 				MessageBox.Show(errMsg, AppName, MessageBoxButtons.OK, MessageBoxIcon.Error);
@@ -58,4 +58,3 @@ DLsiteのURL or 作品IDを元に、作品名、サークル名、作品種別�
 		}
 	}
 
-![image](https://github.com/dekotan24/DLsiteInfoGetter/assets/27037519/54e6f5d9-39a8-40c1-abc2-69dba46cb3c3)
