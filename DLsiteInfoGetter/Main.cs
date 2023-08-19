@@ -151,21 +151,16 @@ namespace DLsiteInfoGetter
 			int id = int.Parse(str);
 			string fullID = prodType;
 			int kuriage = (id / 1000) * 1000 + 1000;
-			string kuriage2 = kuriage.ToString();
+			string kuriage2 = kuriage.ToString().PadLeft(rawText.Length - prodType.Length, '0');
 
-			fullID += id.ToString();
-			if (rawText.Length > 8)
-			{
-				kuriage2 = str.Substring(2, 1) + kuriage;
-				fullID = prodType + str;
-			}
+			fullID = prodType + id.ToString().PadLeft(rawText.Length - prodType.Length, '0');
 
-			prodImage = "https://img.dlsite.jp/modpub/images2/work/doujin/" + prodType + kuriage2 + "/" + fullID + "_img_main.jpg";
+			prodImage = "https://img.dlsite.jp/modpub/images2/work/" + (prodType.Equals("RJ") ? "doujin" : "professional") + "/" + prodType + kuriage2 + "/" + fullID + "_img_main.jpg";
 
 			// 作品名取得
 			if (!rawUrl.Contains("dlsite.com"))
 			{
-				rawUrl = "https://www.dlsite.com/maniax/work/=/product_id/" + rawUrl.ToUpper();
+				rawUrl = "https://www.dlsite.com/" + (prodType.Equals("RJ") ? "maniax" : "pro") + "/work/=/product_id/" + rawUrl.ToUpper();
 			}
 			if (!rawUrl.Contains(".html"))
 			{
