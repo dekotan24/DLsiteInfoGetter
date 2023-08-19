@@ -13,19 +13,19 @@ DLsiteのURL or 作品IDを元に、作品名、サークル名、作品種別�
 	string searchTarget = "RJ162718";  // "https://www.dlsite.com/maniax/work/=/product_id/RJ162718.html" でも可
 	bool result = main.GetInfo(searchTarget, out string prodID, out string title, out string circle, out string prodType, out string imageUrl, out string errMsg);
 
- result：true:エラーなし／false:エラーあり
+ [O] result：true:エラーなし／false:エラーあり
  
- prodID：作品ID
+ [I] prodID：作品ID
  
- title：作品名
+ [O] title：作品名
  
- circle：サークル名
+ [O] circle：サークル名
  
- prodType：作品種別（RJ|VJ|RE|VE|BJ|AJ）
+ [O] prodType：作品種別（RJ|VJ|RE|VE|BJ|AJ）
 
- imageUrl：サムネイル画像URL（maniax：RJ、pro：VJのみ対応）
+ [O] imageUrl：サムネイル画像URL（maniax：RJ、pro：VJのみ対応）
  
- errMsg：エラーが発生した場合のエラーエッセージ
+ [O] errMsg：エラーが発生した場合のエラーエッセージ
 
 
 
