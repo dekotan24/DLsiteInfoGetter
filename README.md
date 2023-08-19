@@ -14,8 +14,10 @@ DLsiteのURL or 作品IDを元に、作品名、サークル名、作品種別�
 	bool result = main.GetInfo(searchTarget, out string prodID, out string title, out string circle, out string prodType, out string imageUrl, out string errMsg);
 
  [O] result：true:エラーなし／false:エラーあり
+
+ [I] searchTarget：検索対象の作品IDもしくはURL
  
- [I] prodID：作品ID
+ [O] prodID：作品ID
  
  [O] title：作品名
  
