@@ -23,7 +23,7 @@ DLsiteのURL or 作品IDを元に、作品名、サークル名、作品種別�
  
  prodType：作品種別（RJ|VJ|RE|VE|BJ|AJ）
 
- imageUrl：サムネイル画像URL（maniaxのRJのみ対応）
+ imageUrl：サムネイル画像URL（maniax：RJ、pro：VJのみ対応）
  
  errMsg：エラーが発生した場合のエラーエッセージ
 
