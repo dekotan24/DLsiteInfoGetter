@@ -1,4 +1,4 @@
-# DLsiteInfoGetter
+# DLsite Information Getter
 ## 概要
 DLsiteのURL or 作品IDを元に、作品名、サークル名、作品種別を取得するDLLです。
 
