@@ -1,6 +1,6 @@
-# DLsiteInfoGetter
+# DLsite Information Getter
 ## 概要
-DLsiteのURL or 作品IDを元に、作品名、サークル名、作品種別を取得するDLLです。
+DLsiteのURL or 作品IDを元に、作品名、サークル名、作品種別等を取得するDLLです。
 
 解析に[AngleSharp](https://github.com/AngleSharp/AngleSharp)を使用していますので、nugetで取得してください。
 
@@ -13,19 +13,21 @@ DLsiteのURL or 作品IDを元に、作品名、サークル名、作品種別�
 	string searchTarget = "RJ162718";  // "https://www.dlsite.com/maniax/work/=/product_id/RJ162718.html" でも可
 	bool result = main.GetInfo(searchTarget, out string prodID, out string title, out string circle, out string prodType, out string imageUrl, out string errMsg);
 
- result：true:エラーなし／false:エラーあり
- 
- prodID：作品ID
- 
- title：作品名
- 
- circle：サークル名
- 
- prodType：作品種別（RJ|VJ|RE|VE|BJ|AJ）
+ [O] result：true:エラーなし／false:エラーあり
 
- imageUrl：サムネイル画像URL（maniaxのRJのみ対応）
+ [I] searchTarget：検索対象の作品IDもしくはURL
  
- errMsg：エラーが発生した場合のエラーエッセージ
+ [O] prodID：作品ID
+ 
+ [O] title：作品名
+ 
+ [O] circle：サークル名
+ 
+ [O] prodType：作品種別（RJ|VJ|RE|VE|BJ|AJ）
+
+ [O] imageUrl：サムネイル画像URL（maniax：RJ、pro：VJのみ対応）
+ 
+ [O] errMsg：エラーが発生した場合のエラーエッセージ
 
 
 
