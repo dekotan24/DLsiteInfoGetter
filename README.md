@@ -25,6 +25,11 @@ DLsiteのURL or 作品IDを元に、作品名、サークル名、作品種別�
 |  -  | DLsiteInfo.Circle | string | サークル名 |
 |  -  | DLsiteInfo.ProductType | string | 作品種別（RJ、VJなど） |
 |  -  | DLsiteInfo.ImageUrl | string | 作品のサムネ画像URL |
+|  -  | DLsiteInfo.SellDate | DateTime | 作品の販売日 |
+|  -  | DLsiteInfo.ScenarioWriter | string[] | シナリオ |
+|  -  | DLsiteInfo.Illustrator | string[] | イラスト |
+|  -  | DLsiteInfo.VoiceActor | string[] | 声優 |
+|  -  | DLsiteInfo.Genre | string[] | ジャンル |
 
 
 
