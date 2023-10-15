@@ -22,7 +22,7 @@ DLsiteのURL or 作品IDを元に、作品名、サークル名、作品種別�
 |  O  | result | DLsiteInfo | 返却値（プロパティは下記を参照） |
 |  -  | result.ProductId | string | 作品ID |
 |  -  | result.Title | string | 作品名称 |
-|  -  | result | string | サークル名 |
+|  -  | result.Circle | string | サークル名 |
 |  -  | result.ProductType | string | 作品種別（RJ、VJなど） |
 |  -  | result.ImageUrl | string | 作品のサムネ画像URL |
 |  -  | result.SellDate | DateTime | 作品の販売日 |
