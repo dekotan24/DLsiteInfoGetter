@@ -19,17 +19,17 @@ DLsiteのURL or 作品IDを元に、作品名、サークル名、作品種別�
 | I/O | パラメータ | 型 | 概要 |
 |-----|-------------|----|----|
 |  I  | searchTarget | string | 検索を行う作品IDもしくはURL |
-|  O  | result | DLsiteInfo | 返却値（パラメータは下記を参照） |
-|  -  | DLsiteInfo.ProductId | string | 作品ID |
-|  -  | DLsiteInfo.Title | string | 作品名称 |
-|  -  | DLsiteInfo.Circle | string | サークル名 |
-|  -  | DLsiteInfo.ProductType | string | 作品種別（RJ、VJなど） |
-|  -  | DLsiteInfo.ImageUrl | string | 作品のサムネ画像URL |
-|  -  | DLsiteInfo.SellDate | DateTime | 作品の販売日 |
-|  -  | DLsiteInfo.ScenarioWriter | string[] | シナリオ |
-|  -  | DLsiteInfo.Illustrator | string[] | イラスト |
-|  -  | DLsiteInfo.VoiceActor | string[] | 声優 |
-|  -  | DLsiteInfo.Genre | string[] | ジャンル |
+|  O  | result | DLsiteInfo | 返却値（プロパティは下記を参照） |
+|  -  | result.ProductId | string | 作品ID |
+|  -  | result.Title | string | 作品名称 |
+|  -  | result | string | サークル名 |
+|  -  | result.ProductType | string | 作品種別（RJ、VJなど） |
+|  -  | result.ImageUrl | string | 作品のサムネ画像URL |
+|  -  | result.SellDate | DateTime | 作品の販売日 |
+|  -  | result.ScenarioWriter | string[] | シナリオ |
+|  -  | result.Illustrator | string[] | イラスト |
+|  -  | result.VoiceActor | string[] | 声優 |
+|  -  | result.Genre | string[] | ジャンル |
 
 
 
